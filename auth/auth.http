@@ -1,0 +1,14 @@
+
+# 1. List a user momentary
+GET {{$dotenv HOST}}/api/users/currentuser
+
+###
+
+# 2. Create a new user
+POST {{$dotenv HOST}}/api/users/signup
+content-Type: application/json
+
+{
+  "email": "renatso30@mail.com",
+  "password": "renato30"
+}
